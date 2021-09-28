@@ -1,4 +1,3 @@
-Welcome to Pyxerter!!!
 
 Version 0.1
 

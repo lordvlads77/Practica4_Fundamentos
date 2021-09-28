@@ -11,9 +11,9 @@ print("\n")
 def cambio_base(numerito, base):
     # converter va a guardar los residuos que vayan quedando.
     converter = ''
-    # mientras decimal / base no sea igual a  el ciclo descrito abajo se ejecutara.
+    # mientras decimal / base no sea igual a 0 el ciclo descrito abajo se ejecutara.
     while numerito // base != 0:
-        # converter es igual numerito entre la base a la que se quiere convertir el numerito.
+        # converter es igual a numerito entre la base a la que se quiere convertir el numerito.
         # se concatena el residuo guardado en converter para dar el resultado correcto
         converter = str(numerito % base) + converter
         # numerito va a ser igual a el numerito a convertir entre la base en la que se quiera convertir
@@ -25,10 +25,10 @@ def cambio_base(numerito, base):
 # mind blown
 
 
-numero = int(input("Introduce el numero a convertir: "))
+numerito = int(input("Introduce el numero a convertir: "))
 base = int(input("Introduce la base: "))
 print("El Resultado es el siguiente: ")
-print(cambio_base(numero, base))
+print(cambio_base(numerito, base))
 print("\n")
 print("Gracias por convertir con Pyxerter")
 print("Por LordVlads77")
